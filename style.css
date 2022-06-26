@@ -1,0 +1,96 @@
+.heading {
+   font-size: 50px;
+   color:  cadetblue;
+   font-weight: normal;
+   box-sizing: border-box;
+   font-size: ;
+   text-transform: ;
+   position: absolute;
+   position: relative;
+   position: fixed;
+   text-align: center;
+   text-align: left;
+   text-align: center;
+   float: left;
+   float: right;
+   font: 1em sans-serif;
+   font-size: 2em;
+   font-size: 30px;
+   width: 100px;
+   width: 100%;
+   border-radius: 50%;
+   overflow: hidden;
+   overflow: hidden;
+   box-sizing: border-box;
+}
+
+section {
+
+}
+section h1 {
+  font-size: 5em;
+
+}
+section p {
+  font-size: 2em;
+  line-height: 2em;
+  color: #999;
+
+}
+section h3 {
+  font-size: 50px;
+  color: #999;
+  text-decoration: unset;
+  border: 1px solid red;
+}
+
+section h3{
+  color: red;
+  font-size: 5em;
+  border: 1px solid #999;
+  padding: 20px;
+
+}
+
+.menu {
+  list-style: none;
+
+}
+.menu li:before {
+  content: ★;
+}
+/* before라는 가상 클래스로 원하는 리스트형태 만들수 */
+
+a {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid red;
+  /* display: block; */ /* 기본너비 100% */
+  display: inline-block; /* 기본너비 100% */ /*가로배치서 크기값 줄수 */
+  width: 300px; /* blockㅇ로 바꿨으므로 크기값 줄수*/
+  margin: 5px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.parent {
+  border: 5px solid #000;
+  width: 600px;
+  /* height: 200px; */ /*자식 요소 높이 따라감. 자식에 float 있으면 높이값 없어지므로 별도 height 강제 지정 필요 */
+  overflow: hidden; /* height 속성으로 높이값 강제로 주는게 아니라 자식 높이에 따라 높이값 찾아줌 */
+  text-align: center;
+}
+
+.child {
+  background-color: gold;
+  width: 200px;
+  height: 300px;
+  /* float: left; */ /*왼쪽으로 둥둥 뜬다는 의미*/
+  /* float을 inline에 주면 크기값 가질 수 안주면 크기값 못주므로 배경 색도 출력 못함 -> inline-block*/
+  display: inline-block;
+  /* margin: auto; */ /* inline 속성에서는 안먹음  -> display: block  
+  /*자식 inline요소이려면  margin auto 대신 부모 요소 text align center(자식의 인라인 요소까지 중앙으로 배치됨*/
+ 
+}
+
